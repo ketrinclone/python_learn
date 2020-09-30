@@ -17,8 +17,8 @@ def displayMenu():
 
 def hand():
     import webbrowser
-    link = "https://www.instagram.com/ferrrmi"
-    webbrowser.open(link)
+    link_instagram = "https://www.instagram.com/ferrrmi"
+    webbrowser.open(link_instagram)
  
 def newUser():
     print("\n-----Sign up-----")
@@ -54,17 +54,24 @@ def oldUser():
 
 def mainmenu():
     print("\n------ MAIN MENU ------\n")
-    choose_mainmenu = input("Choose what you wanna do!\nSee the mulitiple choice above!\n- for Hektobercode type hek\n- for Google Search type google\n- for Yandex Search type yandex\n- for exit type exit\nAnswer : ")
+    choose_mainmenu = input("Choose what you wanna do!\nSee the mulitiple choice above!\n- for Hektobercode type hek\n- for Google Search type google\n- for Yandex Search type yandex\n- for exit type exit\n- for hacktoberfest site type xxx\nAnswer : ")
     if choose_mainmenu == "hek":
         hekfestcode()
     elif choose_mainmenu == "google":
         google()
     elif choose_mainmenu == "yandex":
         yandex()
+    elif choose_mainmenu == "xxx":
+        hacktoberSite()
     elif choose_mainmenu == "exit":
         exit()
     else:
         wrongAns()
+
+def hacktoberSite():
+    import webbrowser
+    link_hacktoberfest = "https://hacktoberfest.digitalocean.com/"
+    webbrowser.open(link_hacktoberfest)
 
 def google():
     print("\n--- Google Searcher ---")
