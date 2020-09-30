@@ -54,7 +54,7 @@ def oldUser():
 
 def mainmenu():
     print("\n------ MAIN MENU ------\n")
-    choose_mainmenu = input("Choose what you wanna do!\nSee the mulitiple choice above!\n- for Hektobercode type hek\n- for Google Search type google\n- for Yandex Search type yandex\n- for exit type exit\nAnswer : ")
+    choose_mainmenu = input("Choose what you wanna do!\nSee the mulitiple choice above!\n- for Hektobercode type hek\n- for Google Search type google\n- for Yandex Search type yandex\n- for exit type exit\n- for hacktoberfest site type xxx\nAnswer : ")
     if choose_mainmenu == "hek":
         hekfestcode()
     elif choose_mainmenu == "google":
