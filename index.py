@@ -2,7 +2,7 @@ from account import *
 def displayMenu():
     print("welcome Hacktoberfest! :D\n")
     print("Sign in & Sign up\n")
-    print("- type y to Login\n- type n to Sign up\n- type q to Quit\n")
+    print("- type y to Login\n- type n to Sign up\n- type q to Quit\n- type h to see me!\n")
     status = input("Answer : ")
     if status == "y":
         oldUser()
@@ -10,8 +10,15 @@ def displayMenu():
         exit()
     elif status == "n":
         newUser()
+    elif status == "h" or "H":
+        hand()
     else:
         wrongAns()
+
+def hand():
+    import webbrowser
+    link = "https://www.instagram.com/ferrrmi"
+    webbrowser.open(link)
  
 def newUser():
     print("\n-----Sign up-----")
