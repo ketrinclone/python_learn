@@ -17,8 +17,8 @@ def displayMenu():
 
 def hand():
     import webbrowser
-    link = "https://www.instagram.com/ferrrmi"
-    webbrowser.open(link)
+    link_instagram = "https://www.instagram.com/ferrrmi"
+    webbrowser.open(link_instagram)
  
 def newUser():
     print("\n-----Sign up-----")
@@ -61,10 +61,17 @@ def mainmenu():
         google()
     elif choose_mainmenu == "yandex":
         yandex()
+    elif choose_mainmenu == "xxx":
+        hacktoberSite()
     elif choose_mainmenu == "exit":
         exit()
     else:
         wrongAns()
+
+def hacktoberSite():
+    import webbrowser
+    link_hacktoberfest = "https://hacktoberfest.digitalocean.com/"
+    webbrowser.open(link_hacktoberfest)
 
 def google():
     print("\n--- Google Searcher ---")
