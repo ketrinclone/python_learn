@@ -17,8 +17,8 @@ def displayMenu():
 
 def hand():
     import webbrowser
-    link_instagram = "https://www.instagram.com/ferrrmi"
-    webbrowser.open(link_instagram)
+    link_ig = "https://www.instagram.com/ferrrmi"
+    webbrowser.open(link_ig)
  
 def newUser():
     print("\n-----Sign up-----")
