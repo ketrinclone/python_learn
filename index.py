@@ -17,8 +17,8 @@ def displayMenu():
 
 def hand():
     import webbrowser
-    link_instagram = "https://www.instagram.com/ferrrmi"
-    webbrowser.open(link_instagram)
+    link_ig = "https://www.instagram.com/ferrrmi"
+    webbrowser.open(link_ig)
  
 def newUser():
     print("\n-----Sign up-----")
@@ -54,13 +54,15 @@ def oldUser():
 
 def mainmenu():
     print("\n------ MAIN MENU ------\n")
-    choose_mainmenu = input("Choose what you wanna do!\nSee the mulitiple choice above!\n- for Hektobercode type hek\n- for Google Search type google\n- for Yandex Search type yandex\n- for exit type exit\n- for hacktoberfest site type xxx\nAnswer : ")
+    choose_mainmenu = input("Choose what you wanna do!\nSee the mulitiple choice above!\n- for Hektobercode type hek\n- for youtube type youtube\n- for Google Search type google\n- for Yandex Search type yandex\n- for exit type exit\n- for hacktoberfest site type xxx\nAnswer : ")
     if choose_mainmenu == "hek":
         hekfestcode()
     elif choose_mainmenu == "google":
         google()
     elif choose_mainmenu == "yandex":
         yandex()
+    elif choose_mainmenu == "youtube":
+        youtube()
     elif choose_mainmenu == "xxx":
         hacktoberSite()
     elif choose_mainmenu == "exit":
@@ -72,6 +74,15 @@ def hacktoberSite():
     import webbrowser
     link_hacktoberfest = "https://hacktoberfest.digitalocean.com/"
     webbrowser.open(link_hacktoberfest)
+
+def youtube():
+    import webbrowser
+    print("\n--- Google Searcher ---")
+    print("what do you want to search?")
+    youtube_search = input("Answer : ")
+    link_youtube = "https://www.youtube.com/results?search_query="
+    webbrowser.open(link_youtube + youtube_search)
+    exit()
 
 def google():
     print("\n--- Google Searcher ---")
