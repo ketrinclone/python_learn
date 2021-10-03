@@ -2,7 +2,7 @@ from account import *
 def displayMenu():
     print("welcome Hacktoberfest! :D\n")
     print("Sign in & Sign up\n")
-    print("- type y to Login\n- type n to Sign up\n- type q to Quit\n- type h to see me!\n- type j for JANCUBU\n- b for Budi Luhur")
+    print("- type y to Login\n- type n to Sign up\n- type q to Quit\n- type h to see me!\n- type j for JANCUBU\n- c for Budi Luhur")
     status = input("Answer : ")
     if status == "y":
         oldUser()
@@ -14,7 +14,7 @@ def displayMenu():
         hand()
     elif status == "j":
         jancubu()
-    elif status == "b":
+    elif status == "c":
         bl()
     else:
         wrongAns()
